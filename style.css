@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 :root {
-    --primary-clr: #
+    --primary-clr: ;
     --secondary-clr:;
     --dark-clr: ;
     --light-clr: ;
@@ -19,7 +19,21 @@ body {
     font-family: 'Lato', sans-serif;
     color: #333;
     line-height: 1.6;
+}
 
+h1, 
+h2 {
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+h1 { 
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
 }
 
 ul {
@@ -30,31 +44,257 @@ li {
     padding: 5px;
 }
 
+a {
+    text-decoration: none;
+}
+
+.py-3 {
+    padding: 3rem 0;
+}
+
 .container {
     margin: auto;
-    max-width: 80vw;
+    max-width: 1100px;
+}
 
+
+.navbar {
+    flex-direction: column;
 }
 
 nav  {
     width: 100%;
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     align-items: center;
     justify-content: space-around;
-    padding: ;
+    padding: 15px 0;
+    background-color: rgba(0,0,0,1);
 }
 
 nav ul {
     display: flex;
     flex-direction: row;
-    padding: ;
+    
+}
+
+nav ul li {
+    padding: 0 2rem;
+}
+
+nav ul a {
+    color: #fff;
+}
+
+/* Main */
+.main {
+    background-color: rgba(0,0,0,0.7);
+    color: #fff;
+    padding: 10rem 0;
+}
+
+.bg-dark {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000;
+}
+
+.container-main h1{
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.container-main p {
+    font-size: 24px;
+}
+
+.container-main.grid {
+    grid-template-columns: 1fr 1fr;
+}
+
+.container-main.grid >*:first-child,
+.container-main.grid >*:nth-child(2) {
+    grid-column: 1 / span 2;
+}
+
+
+/* Buttons */
+.btn {
+    background-color: yellow;
+    text-align: center;
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.btn a {
+    color: #000;
+}
+
+
+.btn:hover {
+    transform: scale(0.98);
+}
+
+.btn2 {
+    margin-top: auto;
+}
+
+
+
+/* Card styling */
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    padding: 20px;
+    text-align: center;
+    height: 100%;
+    max-width: 300px;
+}
+
+
+.card-up {
+    overflow: visible;
+    justify-items: center
+}
+
+.card-up .card {
+    top: -40px;
+}
+
+
+
+/* Big sell */
+.big-sell {
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    align-content: flex-start;
+}
+
+.big-sell >*:first-child {
+    grid-column: 1 / span 2;
+    justify-self: flex-start;
+}
+
+.big-sell >*:nth-child(2) {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 1;
+}
+
+.big-sell >*:nth-child(3) {
+    grid-row: 2 / span 1;
+    
+}
+
+.big-sell img {
+    width: 100%;
+}
+
+.big-sell h2 {
+    margin-top: 0;
+}
+
+.big-sell .flex {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0;
+}
+
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #fff;
+}
+
+footer a {
+    color: #fff;
+}
+
+.footer-flex.flex{
+    align-items: flex-start;
+}
+
+.footer-box {
+    min-width: 15ch;
+}
+
+.copyright {
+    text-align: center;
+    border-top: 1px #fff solid;
+}
+
+.copyright a {
+    color: yellow;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+}
+
+.address > * {
+    padding: 8px 0;
+}
+
+.address .bold {
+    font-weight: bolder;
+}
+
+/* Backgrounds */
+.bg-primary {
+    background-color: yellow;
+}
+
+/* Parrallax */
+.pimg1,
+.pimg2,
+.pimg3 {
+    
+  position: relative;
+  opacity: 0.7;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*   
+    fixed = parallax
+    scroll = normal  
+    */
+  background-attachment: fixed;
+}
+
+.pimg1 {    
+    background-image: url(./img/industrial-pipes.jpg);
+    min-height: 100%;
+}
+
+.pimg2 {    
+    background-image: url(./img/pimg2.jpg);
+    min-height: 100%;
+    background-size: auto;
+    background-repeat: repeat;
 }
 
 
 .flex {
-    display: flex;
-    flex-direction: column;
+    display: flex; 
+    gap: 2rem;
+    
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    justify-content: space-around;
+    
+    
 }

@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
     <title>Dicko's Plumbing | Plumb your house today!</title>
 </head>
 <body>
     <!-- Header and Nav -->
     <header>
-        <div class="container flex nav">
+        <div class="container flex navbar">
             <h2>Dicko's Plumbing</h2>
             <nav>
                 <ul>
@@ -26,63 +27,67 @@
     </header>
 
     <!-- Main -->
-    <section>
-        <div class="container main">
-            <h1>Plumbing. It's what we do!</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat labore et animi! Minima aperiam labore debitis fugiat, omnis dignissimos dicta sint iste provident temporibus, molestias asperiores libero et, minus expedita.</p>
-            <div class="btn"><a href="#">DISCOUNT</a></div>
-            <div class="btn"><a href="#">CALL US</a></div>
+    <section class="pimg1">
+        <div class="main">
+            <div class="container container-main grid">
+                <h1>Plumbing. It's what we do!</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat labore et animi! Minima aperiam labore debitis fugiat, omnis dignissimos dicta sint iste provident temporibus, molestias asperiores libero et, minus expedita.</p>
+                <div class="btn"><a href="#">DISCOUNT</a></div>
+                <div class="btn"><a href="#">CALL US</a></div>
+            </div>
         </div>
     </section>
 
     <!-- Card section -->
-    <section>
-        <div class="container flex">
+    <section class="bg-primary">
+        <div class="container grid card-up">
             <div class="card">
-                <!-- img or icon -->
+                <i class="fas fa-faucet fa-3x"></i>
                 <h3>House & Home</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima excepturi quo suscipit sint eligendi numquam, ducimus ad quasi explicabo esse.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi.</p>
                 <div class="btn2"><a href="#">READ MORE</a></div>
             </div>
             <div class="card">
-                <!-- img or icon -->
+                <i class="fas fa-wrench fa-3x"></i>
                 <h3>Street & Commercial</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima excepturi quo suscipit sint eligendi numquam, ducimus ad quasi explicabo esse.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, veritatis.</p>
                 <div class="btn2"><a href="#">READ MORE</a></div>
             </div>
             <div class="card">
-                <!-- img or icon -->
+                <i class="fas fa-clipboard-list fa-3x"></i>
                 <h3>Quality Assured</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima excepturi quo suscipit sint eligendi numquam, ducimus ad quasi explicabo esse.</p>
+                <p>Lorem ipsum dolor sit amet consectetur elit. Maiores doloremque non nostrum cum.</p>
                 <div class="btn2"><a href="#">READ MORE</a></div>
             </div>
         </div>
     </section>
 
     <!-- Big Sell -->
-    <section>
-        <div class="container grid">
-            <div class="text-left">
-                <h3>Why dicko's Plumbing?</h3>
-                <p>Superior plumbing, same day service and a satisfaction guarantee. Thats why!</p>
-            </div>
-            <img src="#" alt="">
-            <div class="card">
-                <h2>Committed to Great Quality and Easy Service</h2>
-                <p>At Dicko's we pride ourselves on great filler text. for example: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, dolorum? Est dolore velit similique aut perferendis nobis ea tenetur harum quo nostrum minus, sapiente nemo?</p>
-                <div class="btn3"></div>
+    <section class="pimg2">
+        <div class="bg-dark">
+            <div class="container big-sell grid py-3">
+                <div class="text-left">
+                    <h2>Why dicko's Plumbing?</h2>
+                    <p>Superior plumbing, same day service and a satisfaction guarantee. Thats why!</p>
+                </div>
+                <img src="./img/workers.jpg" alt="">
+                <div class="flex">
+                    <h2>Committed to Great Quality and Easy Service</h2>
+                    <p>At Dicko's we pride ourselves on great filler text. for example: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, dolorum? Est dolore velit similique aut perferendis nobis ea tenetur harum quo nostrum minus, sapiente nemo?</p>
+                    <div class="btn3"></div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="container flex">
-            <div class="card">
-                <h3>Dicko's Plumbing</h3>
+        <div class="container flex footer-flex">
+            <div class="footer-box">
+                <h2>Dicko's Plumbing</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor consequatur quisquam, quo blanditiis asperiores vel?</p>
             </div>
-            <div class="card">
+            <div class="footer-box">
                 <h3>Quick Links</h3>
                 <ul>
                     <li><a href="#">Home</a></li>
@@ -91,20 +96,29 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
             </div>
-            <div class="card">
+            <div class="footer-box">
                 <h3>Address</h3>
-                <ul class="address">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                </ul>
+                <dic class="address">
+                    <div><a href="#"><p class="bold">123 Fake st</p>
+                        <p>Melbourne, VIC</p>
+                        <p>3064</p>
+                    </a></div>
+                    <div><a href="#"><p class="bold">360 Noscope pde</p>
+                        <p>Melbourne, VIC</p>
+                        <p>3064</p>
+                    </a></div>
+                </dic>
             </div>
-            <div class="card">
+            <div class="footer-box">
                 <h3>Contact</h3>
                 <ul class="phone">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                 </ul>
             </div>
+        </div>
+        <div class="copyright">
+            <h3>Developed By <a href="#">Ethan Wright</a> Copyright © 2021</h3>
         </div>
     </footer>
     
