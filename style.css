@@ -2,7 +2,7 @@
 
 :root {
     --primary-clr: ;
-    --secondary-clr:;
+    --secondary-clr: ;
     --dark-clr: ;
     --light-clr: ;
     --success-clr: ;
@@ -285,7 +285,7 @@ footer a {
 .flex {
     display: flex; 
     gap: 2rem;
-    
+    /* margin: 0 10px; */
     align-items: center;
     justify-content: space-around;
 }
@@ -295,6 +295,38 @@ footer a {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
     justify-content: space-around;
-    
-    
+    margin: 0 10px;
+}
+
+@media(max-width: 500px) {
+    .grid,
+    .big-sell {
+        grid-template-columns: 1fr;
+        
+    }
+
+    .big-sell >*:first-child,
+    .big-sell >*:nth-child(2),
+    .big-sell >*:nth-child(3) {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .flex,
+    .footer-flex,
+    .footer-flex.flex {
+        flex-direction: column;
+        /* margin-left: 15px; */
+    }
+
+    .flex > *,
+    .grid > * {
+        margin: 0 10px;
+    }
+
+    img {
+        max-width: 90vw;
+        justify-self: center;
+    }
+
 }
